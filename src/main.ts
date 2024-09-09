@@ -1,24 +1,20 @@
-import './style.css'
-import typescriptLogo from './typescript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.ts'
+import "./style.css";
+import "./tutorials/01-type-annotation.ts";
+// import "./tutorials/02-union-type.ts";
+// import "./tutorials/03-arrays.ts";
+// import "./tutorials/04-objects.ts";
+// import "./tutorials/05-functions.ts";
+// import "./tutorials/06-functions-advanced.ts";
+// import "./tutorials/07-type-aliasing.ts";
+// import "./tutorials/08-interface-methods.ts";
+// import "./tutorials/09-interface-merging.ts";
+// import "./tutorials/10-tuples.ts";
+// import "./tutorials/11-enums.ts";
+// import "./tutorials/12-assertion.ts";
+// import "./tutorials/13-es-6-modules.ts";
+import "./tutorials/14-type-guarding.ts";
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
+document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank">
-      <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
-    </a>
-    <h1>Vite + TypeScript</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more
-    </p>
   </div>
-`
-
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+`;
