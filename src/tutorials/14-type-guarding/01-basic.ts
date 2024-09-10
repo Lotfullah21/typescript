@@ -1,6 +1,6 @@
-type Random = string | Number | boolean;
+type valueType = string | Number | boolean;
 
-function checkValue(input: Random): Random {
+function checkValue(input: valueType): valueType {
 	if (typeof input === "string") {
 		const newInput = input.toLowerCase();
 		return newInput;
@@ -14,5 +14,5 @@ function checkValue(input: Random): Random {
 const randomValue = Math.random();
 const input =
 	randomValue < 0.33 ? "Hello world" : randomValue < 0.66 ? 123.2323 : false;
-const result: Random = checkValue(input);
+const result: valueType = checkValue(input);
 console.log(result);
