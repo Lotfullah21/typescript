@@ -1,13 +1,12 @@
 ## Installation
 
-### 1. Create an app
+### 1. Commands to an an app
 
 ```sh
 npm create vite@latest typescript -- --template vanilla-ts
 cd typescript
 npm install
 npm run dev
-
 ```
 
 ### 2. Github Initialization
@@ -29,6 +28,10 @@ git push -f origin main
 
 
 ```
+
+## Sources
+
+[vite-type-script](https://vite.dev/guide/)
 
 ## Union type
 
