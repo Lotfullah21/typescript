@@ -1,8 +1,9 @@
 import "./style.css";
-// import "./tutorials/01-type-annotation.ts";
-// import "./tutorials/02-union-type.ts";
-// import "./tutorials/03-arrays.ts";
-// import "./tutorials/04-objects.ts";
+// import "./tutorials/01-type-annotation/01-type-annotation.ts";
+// import "./tutorials//02-union-type/02-union-type.ts";
+import "./tutorials/03-arrays/03-arrays.ts";
+// import "./tutorials//04-objects/04-objects.ts";
+// import "./tutorials//04-objects/04-arrays-objects.ts";
 // import "./tutorials/05-functions.ts";
 // import "./tutorials/06-functions-advanced.ts";
 // import "./tutorials/07-type-aliasing.ts";
@@ -28,8 +29,8 @@ import "./style.css";
 // import "./tutorials/15-fetch/02-zod-lib";
 // import "./tutorials/16-classes/01-intro";
 // import "./tutorials/16-classes/02-property";
-import "./tutorials/16-classes/03-getters-setters";
-
+// import "./tutorials/16-classes/03-getters-setters";
+import "./practice.ts";
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div>
   </div>

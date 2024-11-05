@@ -5,7 +5,6 @@ interface Book {
 	genera?: string;
 	printTitle(): void;
 	printMessage(message: string): void;
-	// Setting up a property.
 	printSomething: (someValue: number) => number;
 }
 
@@ -20,11 +19,6 @@ const python: Book = {
 	printMessage(message) {
 		console.log(`${message} Enjoy reading ${this.title} by ${this.author}`);
 	},
-	//  First: Using regular
-	// printSomething: function (x) {
-	// 	return this.isbn;
-	// },
-	// Second: Using arrow function
 	printSomething: (x) => {
 		return x;
 	},

@@ -50,7 +50,7 @@ We can have either number or string.
 
 ## Any type
 
-by using `any` keyword, we can assign any type of values to our variables.
+by using `any` keyword, we can assign any type of value to a variable.
 
 ## Arrays
 
@@ -179,7 +179,7 @@ console.log(createEmploy({ id: 12 }));
 
 ##### 1. Passing by reference
 
-When we pass an object by reference, even if we have additional properties than than the ones specified at the function, we won't get an error.
+When we pass an object by reference, even if we have additional properties than than the ones as parameter, we won't get an error.
 If we pass an online object, we will get an error.
 
 ```ts
