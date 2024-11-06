@@ -3,7 +3,8 @@ interface Book {
 	readonly title: string;
 	author: string;
 	genera?: string;
-	printSomething: (someValue: number) => number;
+	printTitle(): void;
+	printMessage(message: string): void;
 }
 
 const python: Book = {
@@ -11,10 +12,14 @@ const python: Book = {
 	title: "Deep learning with python",
 	author: " François Chollet",
 	genera: "Artificial Intelligence",
-	printSomething: (x) => {
-		return x;
+	printTitle() {
+		console.log(this.title);
+	},
+	printMessage(message) {
+		console.log(`${message} Enjoy reading ${this.title} by ${this.author}`);
 	},
 };
 
 console.log(python);
-console.log(python.printSomething(120));
+python.printTitle();
+python.printMessage("Happy reading!!!!");

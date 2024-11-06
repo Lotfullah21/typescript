@@ -1,9 +1,3 @@
-// Assertion
-
-// let king: any = "Abullah";
-// const lenghtOfString: number = (king as string).length;
-// console.log(lenghtOfString);
-
 // Unknown
 
 // function runCode() {
