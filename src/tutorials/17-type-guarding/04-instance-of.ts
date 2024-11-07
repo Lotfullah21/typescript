@@ -8,6 +8,7 @@ function checkInput(input: Date | string): void {
 
 checkInput(new Date());
 checkInput("2024-10-9");
+
 // try {
 // 	throw new Error(`Hello king`);
 // } catch (error) {

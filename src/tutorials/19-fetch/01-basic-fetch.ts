@@ -1,12 +1,12 @@
-const url = "https://www.course-api.com/react-tours-project";
+const url = "http://127.0.0.1:8000/courses/";
 
-async function fetchData(url: string): Promise<Tours[]> {
+async function fetchData(url: string): Promise<Course[]> {
 	try {
 		const response = await fetch(url);
 		if (!response.ok) {
 			throw new Error(`HTTP error: ${response.status}`);
 		}
-		const data: Tours[] = await response.json();
+		const data: Course[] = await response.json();
 		console.log(data);
 		return data;
 	} catch (error) {
@@ -19,16 +19,16 @@ async function fetchData(url: string): Promise<Tours[]> {
 	}
 }
 
-type Tours = {
+type Course = {
 	id: string;
-	image: string;
-	name: string;
-	info: string;
+	title: string;
+	description: string;
+	thumbnail: string;
 	map: () => {};
 };
 
-const tours = await fetchData(url);
-const toursData = tours.map((tour) => {
-	console.log(tour.image);
+const courses = await fetchData(url);
+const courseData = courses.map((course) => {
+	return course.thumbnail;
 });
-console.log(toursData);
+console.log("Course data", courseData);

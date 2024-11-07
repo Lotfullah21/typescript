@@ -1,6 +1,6 @@
 interface genericInterface<T> {
 	value: T;
-	getSomething: () => T;
+	getSomething(): T;
 }
 
 const stringValue: genericInterface<string> = {

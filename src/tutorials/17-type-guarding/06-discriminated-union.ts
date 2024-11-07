@@ -11,23 +11,30 @@ type DecrementAction = {
 	user: string;
 };
 
+// Union type for Action
 type Action = IncrementAction | DecrementAction;
 
 function reducer(state: number, action: Action) {
 	switch (action.type) {
 		case "increment":
+			// Handle increment action
 			action.amount = action.amount + state;
 			return action;
+
 		case "decrement":
+			// Handle decrement action
 			action.amount = action.amount - state;
 			return action;
+
 		default:
-			// default case, when we have additional action.type that we did not handle in action.type, we will be assigning a value to never type variable.
+			// Exhaustiveness check: if any other action type is added to Action,
+			// TypeScript will catch it here
 			const unexpectedAction: never = action;
 			throw new Error(`Unexpected Action ${action}`);
 	}
 }
 
+// Call the reducer function with a sample state and action
 const newState = reducer(15, {
 	type: "increment",
 	user: "king",

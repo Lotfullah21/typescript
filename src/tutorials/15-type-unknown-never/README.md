@@ -50,5 +50,3 @@ let x: never = 10; // Error, we cannot assign any value here.
 ```
 
 TS, by default assign type `never` to our variable if we checked all the conditions or exhausted all the conditions.
-
-One other use case is when we handle all the conditions.
