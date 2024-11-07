@@ -22,7 +22,7 @@ console.log(
 );
 ```
 
-Can you see a repetitive pattern up there, the thing that is changing in the type of the argument and the returned value.
+Can you see a repetitive pattern up there, the thing that is changing is the type of the argument and the returned value.
 Generics can help us here.
 
 ### Generic Function
